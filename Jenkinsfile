@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh "docker build -t hello-world -f ${/home/ganashree/hello-world} ."
+                sh "docker build -t hello-world ."
             }
         }
         stage('Run Container') {
